@@ -1,0 +1,22 @@
+.cont1{
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 2%;
+}
+.title{
+    left: 50%;
+position: relative;
+font-size: 2rem;}
+.h1{
+    text-align: center;
+    top:0;
+
+}
+.App-logo{
+    top:0;
+
+width: 4rem;
+height: 4rem;
+}
