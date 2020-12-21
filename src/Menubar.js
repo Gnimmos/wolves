@@ -1,9 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Navbar, Nav, Card, Button} from 'react-bootstrap';
 import { Container, Row, Col } from 'react-bootstrap';
-import Popup from "reactjs-popup";
-import Media from 'react-bootstrap/Media';
 import logo1 from './wolves_pics/noun_Prague.png'
 import './Menubar.css'
 

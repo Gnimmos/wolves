@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { Form, Button, Row, Col } from 'react-bootstrap';
+import { Form, Button, Row } from 'react-bootstrap';
 import ToggleButton from "react-bootstrap/ToggleButton";
 import ToggleButtonGroup from "react-bootstrap/ToggleButtonGroup";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -11,7 +11,7 @@ const ContactForm = () => {
     radio: '',
   });
   const [result, setResult] = useState(null);
-  const [value, setValue] = React.useState(null);   
+  const [value] = React.useState(null);   
   const sendEmail = event => {
     event.preventDefault();
     axios

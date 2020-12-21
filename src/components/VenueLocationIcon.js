@@ -1,5 +1,4 @@
 import L from 'leaflet';
-import logo1 from '../assets/pin.png'
 
 export const VenueLocationIcon = L.icon({
   iconUrl: '../assets/pin.png',

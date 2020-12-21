@@ -1,8 +1,6 @@
 import React from 'react';
 import {Popup} from 'react-leaflet';
-import Modal from 'react-bootstrap/Modal';
-import { Container, Row, Col } from 'react-bootstrap';
-import Media from 'react-bootstrap/Media';
+import {  Row, Col } from 'react-bootstrap';
 import Header from './Header';
 import ContactForm from './ContactForm'
 import 'bootstrap/dist/css/bootstrap.min.css';
