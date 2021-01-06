@@ -17,7 +17,7 @@ class Menubar extends React.Component{
   }
     render(){
         return (
-<Container className = "cont1" bg="trasparent" expand="lg" className="px-0">
+<Container className = "cont1 px-0" bg="trasparent" expand="lg">
             <Row  className="Content">
             <Col xs={6}>
             <img  className = "App-logo" src={this.state.logo} alt="Logo" />
