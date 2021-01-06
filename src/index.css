@@ -35,13 +35,14 @@
     left:0;
     bottom:0;
     right:0; 
-    background-color: white;
+    background-color: transparent;
  
   }
   .text{
     left:50px;
     bottom: 0;
     position:fixed;
+    color: black;
 
   }
   .title{
@@ -49,6 +50,19 @@
   }
   .footer-logo{
     color: black;
-    background-color: white;
+    background-color: transparent;
     margin-right: 70px !important;
   }
+
+
+    @media only screen and (max-width: 720px) {
+      .buttoms, but1{
+        font-size: 1rem;
+      } 
+    }
+
+    @media only screen and (max-width: 992px) {
+      .buttoms, but1{
+        font-size: 1rem;
+      } 
+    }

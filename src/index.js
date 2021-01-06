@@ -9,12 +9,14 @@ import Col from 'react-bootstrap/Col'
 import logo2 from './wolves_pics/iksz_logo.png'
 import SlidingPane from "react-sliding-pane";
 import "react-sliding-pane/dist/react-sliding-pane.css";
+import Wovlespanel from './components/Wolvespanel.js'
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       isPaneOpen: false,
       isPaneOpenLeft: false,
+      isPaneOpenRight: false,
     }
   }
   render() {
@@ -27,22 +29,23 @@ class App extends React.Component {
                     <Menubar/>
                   </Col>
 
-                  <Col className="buttoms but1"  md={4}>
+                  <Col className="buttoms but1"  xs={4}>
                   <button className="buttoms but1" onClick={() => this.setState({ isPaneOpenLeft: true })}>
-                    ABOUT
+                  ABOUT
                   </button>
                   </Col>
-                  <Col className="buttoms but1"   md={4}>
-                  <button className="buttoms but1"  onClick={() => this.setState({ isPaneOpenLeft: true })}>
-                    WOLVES
-                  </button>
-                  </Col>
-                  <Col className="buttoms but1"  md={4}>
+                  <Col className="buttoms but1"  xs={4}>
                   <button className="buttoms but1"  onClick={() => this.setState({ isPaneOpen: true })}>
                   MAP
                  </button>
 
                   </Col>
+                  <Col className="buttoms but1"   xs={4}>
+                  <button className="buttoms but1"  onClick={() => this.setState({ isPaneOpenRight: true })}>
+                  WOLVES
+                  </button>
+                  </Col>
+
                   <Col   md={12} >
                       <Row className="footerText">
 
@@ -62,8 +65,7 @@ class App extends React.Component {
         className="some-custom-class"
         overlayClassName="some-custom-overlay-class"
         isOpen={this.state.isPaneOpen}
-        title="Hey, it is optional pane title.  I can be React component too."
-        subtitle="Optional subtitle."
+
         from = "bottom"
         width="100%"
 
@@ -74,16 +76,31 @@ class App extends React.Component {
       >
       <Maps/>
       </SlidingPane>
+
+
+      
       <SlidingPane
-        closeIcon={<div>Some div containing custom close icon.</div>}
+        className="some-custom-class"
+        overlayClassName="some-custom-overlay-class"        
         isOpen={this.state.isPaneOpenLeft}
-        title="Hey, it is optional pane title.  I can be React component too."
         from="left"
-        width="200px"
+        width="100%"
         onRequestClose={() => this.setState({ isPaneOpenLeft: false })}
       >
         <div>And I am pane content on left.</div>
       </SlidingPane>
+
+      <SlidingPane
+        className="some-custom-class"
+        overlayClassName="some-custom-overlay-class"        
+        isOpen={this.state.isPaneOpenRight}
+        from="right"
+        width="100%"
+        onRequestClose={() => this.setState({ isPaneOpenRight: false })}
+      >
+        <Wovlespanel/>
+      </SlidingPane>
+
 
         </div>
     );
