@@ -28,6 +28,7 @@ app.post('/send', (req, res) => {
 
     transporter.sendMail(mailOptions, function (err, info) {
       if (err) {
+        console.log(err);
         res.status(500).send({
           success: false,
           message: 'Something went wrong. Try again later'
@@ -41,7 +42,7 @@ app.post('/send', (req, res) => {
   } catch (error) {
     res.status(500).send({
       success: false,
-      message: 'Something went wrong. Try again later'
+      message: 'Something went wrong and i catched the error. Try again later'
     });
   }
 });
