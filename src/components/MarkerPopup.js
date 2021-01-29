@@ -5,7 +5,7 @@ import Header from './Header';
 import ContactForm from './ContactForm'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style.css';
-import wolve1 from '../wolves_pics/1.jpg';
+import wolve1 from '../wolves_pics/firstwolf.png';
 import soundfile from '../resorces/wolve1.mp3';
 import ReactAudioPlayer from 'react-audio-player';  
 
