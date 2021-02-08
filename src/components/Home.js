@@ -8,7 +8,6 @@ import Col from 'react-bootstrap/Col'
 import logo2 from '../wolves_pics/iksz_logo.png'
 import SlidingPane from "react-sliding-pane";
 import "react-sliding-pane/dist/react-sliding-pane.css";
-import Wovlespanel from '../components/Wolvespanel.js'
 import { Link } from 'react-router-dom';
 
 class Home extends React.Component {
