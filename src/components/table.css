@@ -1,0 +1,7 @@
+.table {
+    border-spacing: 0 0;
+    border-top: none;
+    overflow-y:auto;
+    height: 100%;
+    color: black;
+}

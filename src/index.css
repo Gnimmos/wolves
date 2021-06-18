@@ -4,6 +4,13 @@
     width: 100%;
     height: 100%;
 }
+.middle{
+  margin-top: 10%;
+  height: 80%; 
+}
+.leaflet-popup-content-wrapper{
+  width: 1000px;
+}
 
 .container {
   width: 100%;
@@ -18,17 +25,23 @@
   top:0;
   right:0; 
 }
-.buttoms, but1{
+.wolvethumb1{
+  height:300px;
+  width: 150px;
 
+}
+.buttoms, but1{
   height: 100%;
-  font-size: 6rem;
+  font-size: 48px;
   background-color: transparent;
   border: none;
   text-align: center;
 } 
 .App-footer{
     padding-left: 0%;
-    height: 40px;
+    height: 10%;
+    position:relative;
+
   }
   .footerText{
     position:fixed;
@@ -36,37 +49,252 @@
     bottom:0;
     right:0; 
     background-color: transparent;
+    height: 10%;
+
  
   }
-  .text{
-    left:50px;
-    bottom: 0;
-    position:fixed;
+  .wolvethumb1link{
+    width: 300px;
+}
+  .colorit{
     color: black;
-
   }
+  .widewolves{
+    margin-left: -4%;
+  }
+  .totheright{
+    margin-left: 4%;
+  }
+  .text{
+    left:11%;
+    bottom: 0;
+    position:relative;
+    color: black;
+  }
+  .leaflet-popup-content{
+    margin-top: 30px !important;
+  }
+  .leaflet-container a.leaflet-popup-close-button {
+    top: 30px;
+  right: 30px;
+  }
+  .impo
+  .wolvethumb{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .backbutton{
+    background-color: transparent;
+    border: none;
+    size:2rem;
+    left:2%;
+    padding-top: 2%;
+        height: 25px;
+  }
+  .about{
+    margin: 2%;
+    }
+ .hyper{
+   margin-left: 45%;
+ }
   .title{
     color: black;
   }
   .footer-logo{
     color: black;
     background-color: transparent;
-    margin-right: 70px !important;
+    margin-left: 13% !important;
   }
   p{
     color: black;
 
+
   }
 
 
+
     @media only screen and (max-width: 720px) {
-      .buttoms, but1{
+      .center , .buttoms, but1{
         font-size: 1rem;
       } 
+      .footerText{
+      height: 20%;
     }
+    .middle{
+      height: 60%;
+    }
+    .text{
+      left: 1%;
+    }
+    .hyper{
+      margin-left: 10%;
+    }
+    .buttoms{
+      size:3rem;    }
+    .leaflet-popup-content-wrapper{
+      width: 100%;
+    }
+    .widewolves{
+      margin-left: 0%;
+    }
+    .totheright{
+      margin-left: 0%;
+    }
+    
+    
+    .leaflet-popup-content{
+      margin-top: 30px;
+    }
+  }
+
+  @media only screen and (max-width: 720px) {
+    .center , .buttoms, but1{
+      font-size: 1rem;
+    } 
+    .footerText{
+    height: 10%;
+  }
+  .middle{
+    height: 60%;
+  }
+  .text{
+    left: 1%;
+  }
+  .hyper{
+    margin-left: 10%;
+  }
+  .buttoms{
+    size:3rem;
+  }    
+  .leaflet-popup-content-wrapper{
+    width: 100%;
+  }
+  .leaflet-popup-content{
+    margin-top: 30px;
+  }
+  .widewolves{
+    margin-left: 0%;
+  }
+  .totheright{
+    margin-left: 0%;
+  }
+  
+}
+@media only screen and (max-width: 810px) {
+  .center , .buttoms, but1{
+    font-size: 1rem;
+  } 
+  .footerText{
+  height: 10%;
+}
+.middle{
+  height: 60%;
+}
+.text{
+  left: 1%;
+}
+.hyper{
+  margin-left: 10%;
+}
+.buttoms{
+  size:3rem;
+}
+.leaflet-popup-content-wrapper{
+  width: 100%;
+}
+.leaflet-popup-content{
+  margin-top: 30px;
+}
+.widewolves{
+  margin-left: 0%;
+}
+.totheright{
+  margin-left: 0%;
+}
+
+}
 
     @media only screen and (max-width: 992px) {
-      .buttoms, but1{
+      .center.buttoms, but1{
         font-size: 1rem;
       } 
+      .footerText{
+        height: 20%;
+      }
+      .middle{
+        height: 60%;
+      }
+      .text{
+        left: 1%;
+      }
+      .hyper{
+        margin-left: 10%;
+      }
+      .buttoms{
+        size:3rem;
+      }
+      .leaflet-popup-content-wrapper{
+        width: 100%;
+      }
+      .widewolves{
+        margin-left: 0%;
+      }
+      .totheright{
+        margin-left: 0%;
+      }
+      
+    }
+    @media only screen and (max-width: 1224px) {
+      .center.buttoms, but1{
+        font-size: 1rem;
+      } 
+      .footerText{
+        height: 20%;
+      }
+      .middle{
+        height: 90%;
+      }
+      .text{
+        left: 5%;
+      }
+      .hyper{
+        margin-left: 10%;
+        size: 70px;
+      }
+      .footer-logo{
+        size:70px;
+      }
+      .buttoms{
+        size:3rem;
+      }
+      .leaflet-popup-content-wrapper{
+        width: 100%;
+        margin-left: 50px
+
+      }
+      .leaflet-container a.leaflet-popup-close-button {
+        top: 10px!important;
+        right: 10px;
+        color: black;
+    }
+      .wolvethumb1{
+        height:180px;
+        width: 90px;
+
+      }
+      .wolvethumb1link{
+          width: 200px;
+      }
+      .leaflet-popup-content{
+        margin-top: 30px;
+      }
+      .widewolves{
+        margin-left: 0%;
+      }
+      .totheright{
+        margin-left: 0%;
+      }
+      
+
     }

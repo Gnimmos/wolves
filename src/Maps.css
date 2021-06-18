@@ -4,12 +4,27 @@
 }
 .Map{
   background-color: black;
-
 position: fixed ;
   left:0;
   width: 100%;
   height: 90%;
 
+}
+.scrollFix {
+  line-height: 1.35;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.Maplink{
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: fixed ;
+    left:0;
+}
+.marker{
+  height: 50px !important;
+  width: 50px !important;
 }
 .displaycont{
   width: 100%;
@@ -17,10 +32,25 @@ position: fixed ;
 }
 .Popup{
     width: 800px;
-    height: auto;
+    height: 50%;
 }
+.leaflet-container a.leaflet-popup-close-button {
+  top: 30px;
+right: 10px;
+color: black;
+}
+.importedpanel{
+  height: 400px;
+  padding: 2%;
+}
+.Popup {
+  left: -440px!important; 
+  top: -470px; 
+}
+.wolvesdiv{
+  min-height: 400px;}
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 1224px) {
   .leaflet-container {
     width: 100%;
     height: 100%;
@@ -32,4 +62,16 @@ position: fixed ;
     height: 90%;
   
   }
+  .Popup{
+    width: 350px;
+    height: 600px;
+    left: -250px!important; 
+    top: -540px; 
+     
+
+  }
+  .importedpanel {
+    height: 400px;
+}
+
 }
