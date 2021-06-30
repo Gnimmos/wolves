@@ -36,7 +36,7 @@ const onUnmount = React.useCallback(function callback(map) {
     <GoogleMap
       mapContainerStyle={containerStyle}
       center={position}
-        initialCenter = {{ lat: 50.08341909503754,      lng: 	14.418190084998185}}
+        initialCenter = {{ lat: 50.083320188218316,      lng: 	14.417951201134887}}
         zoom= {12}
       onLoad={handleLoad}
       onDragEnd={handleCenter}
@@ -44,7 +44,7 @@ const onUnmount = React.useCallback(function callback(map) {
       onUnmount={onUnmount}
     >
  <Marker
-           position={{ lat: 50.08341909503754,      lng: 	14.418190084998185}}></Marker>
+           position={{ lat: 50.083320188218316,     lng: 		14.417951201134887}}></Marker>
 <></>
       </GoogleMap>
   ) : <></>

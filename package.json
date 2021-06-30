@@ -1,5 +1,6 @@
 {
   "name": "wolves",
+  "homepage": "http://wolvestalk.commedia.wiki/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -90,7 +90,7 @@ class Wolf3 extends React.Component {
                                 <div style={{width:"300px"}}>
 
                                 <button className="langu" onClick={() => changeLanguage(this.state.lang ? globalVal.value :  globalVal.value)}>{this.state.lang ?  globalVal.value :  globalVal.value}</button>
-
+          <br/>
                                 <img  src={wolve1} alt="Logo" className ="diffwolf" width = "300px" height = "150px" onClick={this.playaudio.bind(this)} />
 
                                 <ReactAudioPlayer

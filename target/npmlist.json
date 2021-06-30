@@ -1,0 +1,130 @@
+{
+  "version": "0.1.0",
+  "name": "wolves",
+  "dependencies": {
+    "@react-google-maps/api": {
+      "version": "2.2.0",
+      "resolved": "https://registry.npmjs.org/@react-google-maps/api/-/api-2.2.0.tgz"
+    },
+    "@somarmeteorologia/react-leaflet-markers": {
+      "version": "1.0.2",
+      "resolved": "https://registry.npmjs.org/@somarmeteorologia/react-leaflet-markers/-/react-leaflet-markers-1.0.2.tgz"
+    },
+    "@testing-library/jest-dom": {
+      "version": "5.11.6",
+      "resolved": "https://registry.npmjs.org/@testing-library/jest-dom/-/jest-dom-5.11.6.tgz"
+    },
+    "@testing-library/react": {
+      "version": "11.2.2",
+      "resolved": "https://registry.npmjs.org/@testing-library/react/-/react-11.2.2.tgz"
+    },
+    "@testing-library/user-event": {
+      "version": "12.2.2",
+      "resolved": "https://registry.npmjs.org/@testing-library/user-event/-/user-event-12.2.2.tgz"
+    },
+    "axios": {
+      "version": "0.21.1",
+      "resolved": "https://registry.npmjs.org/axios/-/axios-0.21.1.tgz"
+    },
+    "cors": {
+      "version": "2.8.5",
+      "resolved": "https://registry.npmjs.org/cors/-/cors-2.8.5.tgz"
+    },
+    "emailjs-com": {
+      "version": "2.6.4",
+      "resolved": "https://registry.npmjs.org/emailjs-com/-/emailjs-com-2.6.4.tgz"
+    },
+    "fbjs": {
+      "version": "3.0.0",
+      "resolved": "https://registry.npmjs.org/fbjs/-/fbjs-3.0.0.tgz"
+    },
+    "i18next-browser-languagedetector": {
+      "version": "6.1.0",
+      "resolved": "https://registry.npmjs.org/i18next-browser-languagedetector/-/i18next-browser-languagedetector-6.1.0.tgz"
+    },
+    "i18next": {
+      "version": "20.0.0",
+      "resolved": "https://registry.npmjs.org/i18next/-/i18next-20.0.0.tgz"
+    },
+    "leaflet": {
+      "version": "1.7.1",
+      "resolved": "https://registry.npmjs.org/leaflet/-/leaflet-1.7.1.tgz"
+    },
+    "npm-watch": {
+      "version": "0.7.0",
+      "resolved": "https://registry.npmjs.org/npm-watch/-/npm-watch-0.7.0.tgz"
+    },
+    "prop-types": {
+      "version": "15.7.2",
+      "resolved": "https://registry.npmjs.org/prop-types/-/prop-types-15.7.2.tgz"
+    },
+    "react-audio-player": {
+      "version": "0.14.0",
+      "resolved": "https://registry.npmjs.org/react-audio-player/-/react-audio-player-0.14.0.tgz"
+    },
+    "react-bootstrap": {
+      "version": "1.4.0",
+      "resolved": "https://registry.npmjs.org/react-bootstrap/-/react-bootstrap-1.4.0.tgz"
+    },
+    "react-dom": {
+      "version": "17.0.1",
+      "resolved": "https://registry.npmjs.org/react-dom/-/react-dom-17.0.1.tgz"
+    },
+    "react-google-invisible-recaptcha": {
+      "version": "0.2.11",
+      "resolved": "https://registry.npmjs.org/react-google-invisible-recaptcha/-/react-google-invisible-recaptcha-0.2.11.tgz"
+    },
+    "react-i18next": {
+      "version": "11.8.10",
+      "resolved": "https://registry.npmjs.org/react-i18next/-/react-i18next-11.8.10.tgz"
+    },
+    "react-leaflet-enhanced-marker": {
+      "version": "1.0.12",
+      "resolved": "https://registry.npmjs.org/react-leaflet-enhanced-marker/-/react-leaflet-enhanced-marker-1.0.12.tgz"
+    },
+    "react-leaflet-markercluster": {
+      "version": "3.0.0-rc1",
+      "resolved": "https://registry.npmjs.org/react-leaflet-markercluster/-/react-leaflet-markercluster-3.0.0-rc1.tgz"
+    },
+    "react-leaflet-universal": {
+      "version": "2.2.1",
+      "resolved": "https://registry.npmjs.org/react-leaflet-universal/-/react-leaflet-universal-2.2.1.tgz"
+    },
+    "react-leaflet": {
+      "version": "2.8.0",
+      "resolved": "https://registry.npmjs.org/react-leaflet/-/react-leaflet-2.8.0.tgz"
+    },
+    "react-router-dom": {
+      "version": "5.2.0",
+      "resolved": "https://registry.npmjs.org/react-router-dom/-/react-router-dom-5.2.0.tgz"
+    },
+    "react-router": {
+      "version": "5.2.0",
+      "resolved": "https://registry.npmjs.org/react-router/-/react-router-5.2.0.tgz"
+    },
+    "react-scripts": {
+      "version": "4.0.3",
+      "resolved": "https://registry.npmjs.org/react-scripts/-/react-scripts-4.0.3.tgz"
+    },
+    "react-sliding-pane": {
+      "version": "6.1.2",
+      "resolved": "https://registry.npmjs.org/react-sliding-pane/-/react-sliding-pane-6.1.2.tgz"
+    },
+    "react-sound": {
+      "version": "1.2.0",
+      "resolved": "https://registry.npmjs.org/react-sound/-/react-sound-1.2.0.tgz"
+    },
+    "react": {
+      "version": "17.0.2",
+      "resolved": "https://registry.npmjs.org/react/-/react-17.0.2.tgz"
+    },
+    "underscore": {
+      "version": "1.13.1",
+      "resolved": "https://registry.npmjs.org/underscore/-/underscore-1.13.1.tgz"
+    },
+    "update": {
+      "version": "0.7.4",
+      "resolved": "https://registry.npmjs.org/update/-/update-0.7.4.tgz"
+    }
+  }
+}

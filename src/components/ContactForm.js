@@ -4,7 +4,6 @@ import Recaptcha from 'react-google-invisible-recaptcha';
 
 import * as emailjs from 'emailjs-com'
 
-import { withTranslation, Trans } from "react-i18next";
 import { Translation } from 'react-i18next';
 import { Form, Button, Row } from 'react-bootstrap';
 import ToggleButton from "react-bootstrap/ToggleButton";
@@ -16,10 +15,7 @@ init("user_bAkWfm080bvCjrCo5P8HI");
 
 
 class ContactForm extends Component {
-    constructor(props, context) {
-    super(props, context);
 
-  }
 
   state = {
     radio: '',
@@ -83,7 +79,6 @@ onResolved = () => {
 }
 
   render() {
-    const {wolfs} = this.state;
 
   return (
 <div className="form">

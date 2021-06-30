@@ -65,11 +65,16 @@
   .totheright{
     margin-left: 4%;
   }
+  .logo3{
+    width: 100px;
+    height: 70px;
+  }
   .text{
     left:11%;
     bottom: 0;
     position:relative;
     color: black;
+    margin-top: 7%;
   }
   .leaflet-popup-content{
     margin-top: 30px !important;
@@ -96,8 +101,13 @@
     margin: 2%;
     }
  .hyper{
-   margin-left: 45%;
+   margin-left: 15%;
+   margin-top: 7%
  }
+ .hyper1{
+  margin-left: 37%;
+  margin-top: 10%;
+}
   .title{
     color: black;
   }
@@ -105,11 +115,10 @@
     color: black;
     background-color: transparent;
     margin-left: 13% !important;
+    margin-top: 5%;
   }
   p{
     color: black;
-
-
   }
 
 
@@ -163,6 +172,9 @@
   }
   .hyper{
     margin-left: 10%;
+  }
+  .hyper1{
+    margin-left: 35%;
   }
   .buttoms{
     size:3rem;
@@ -250,18 +262,34 @@
         font-size: 1rem;
       } 
       .footerText{
-        height: 20%;
+        height: 35%;
       }
       .middle{
-        height: 90%;
+        height: 80%;
       }
       .text{
         left: 5%;
       }
       .hyper{
-        margin-left: 10%;
+        margin-left: -10%;
         size: 70px;
+        margin-top: 0%;
       }
+      .hyper1{
+        margin-left: 2%;
+        margin-top: 0%;
+
+      }
+      .logo3{
+        width: 100px;
+        height: 100px;
+      }
+      .text{
+        margin-left: -1%;
+        margin-top: 0%;
+
+      }
+
       .footer-logo{
         size:70px;
       }

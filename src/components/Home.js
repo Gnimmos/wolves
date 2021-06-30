@@ -9,6 +9,7 @@ import logo2 from '../hrlogo.png'
 import SlidingPane from "react-sliding-pane";
 import "react-sliding-pane/dist/react-sliding-pane.css";
 import { Link } from 'react-router-dom';
+import logo3 from '../wolves_pics/Fotograf_logo-02.svg'
 
 import { Translation } from 'react-i18next';
 
@@ -24,8 +25,6 @@ class Home extends React.Component {
     }
   }
   render() {
-    const { t } = this.props;
-
     return (
 
         <div className=" cont">
@@ -71,16 +70,21 @@ class Home extends React.Component {
                 </Row>
 
                 <Row className="footerText">
-<Col sm={6}>
+<Col lg={4}>
 <Translation>
                                 {
                                     t =>  <p className=" text">{t("Silencing")}</p>
                                     }
                                 </Translation>
 </Col>
-<Col sm={6}>
+<Col lg={4}>
 <a  className = " hyper" href="https://iksz.fsv.cuni.cz"  target="blank">
 <img className="footer-logo" style={{picturecolor:"black"}} src={logo2} alt="Logo" color="white" />
+</a>
+</Col>
+<Col lg={4}>
+<a  className = "hyper1" href="https://fotografestival.cz"  target="blank">
+<img className="logo3" style={{picturecolor:"black"}} src={logo3} alt="Logo" color="white" />
 </a>
 </Col>
 </Row>    

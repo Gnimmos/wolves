@@ -34,37 +34,32 @@ class Wolf1 extends React.Component {
 
       var aud = globalVal.value;
       if(aud==='en'){
-        this.setState({
+        this.setState({           
           lang: true 
-           
         });
 
       }else{
         this.setState({           
           lang: false 
-
         });
       }
     }
-    
         playaudio(){       
         if(!this.play){
               this.setState({
                 play:true
-              });
-            }
+              })}
         else{
             this.setState({
               play:false
-            });
+            })
         }
-
-
-
+    
     }
     
     render (){
         const { t, i18n } = this.props;
+
         const changeLanguage = lng => {
           i18n.changeLanguage(lng);
           if (this.state.lang) {
@@ -73,14 +68,16 @@ class Wolf1 extends React.Component {
             });
             globalVal.value = 'cz';
 
+    
           }
           else{
             this.setState({ 
               lang: true
             });
-          }
-          globalVal.value = 'en';
+            globalVal.value = 'en';
 
+          }
+          
         };
         return (
             <div className="wolvesdiv">   
@@ -145,6 +142,7 @@ class Wolf1 extends React.Component {
                                     }
                                 </Translation> 
 
+<br/>
 <br/>
                                     </Col>
                                     <Col lg={7} className="col2" >

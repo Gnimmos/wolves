@@ -1,4 +1,4 @@
-import React, { Component,useState,useRef } from 'react';
+import React, { useState,useRef } from 'react';
 import 'leaflet/dist/leaflet.css';
 import { GoogleMap, useJsApiLoader, Marker, InfoWindow } from '@react-google-maps/api';
 
@@ -62,7 +62,6 @@ function MapView() {
     googleMapsApiKey: "AIzaSyCPvonqANcEExEJ9Kt3FuRPGePPZb1JqBo"
   })
 
-  const [map, setMap] = React.useState(null)
 
   function handleLoad(map) {
     mapRef.current = map;
@@ -74,24 +73,23 @@ function MapView() {
     const newPos = mapRef.current.getCenter().toJSON();
     setPosition(newPos);
   }
-  const onUnmount = React.useCallback(function callback(map) {
-    setMap(null)
-  }, [])
 
   return isLoaded ? (
       <GoogleMap
         mapContainerStyle={containerStyle}
         center={position}
-          initialCenter = {{ lat: 50.09731092200874,  lng: 	14.42326788471357  }}
+          initialCenter = {{     lat: 50.0970735409358,
+            lng: 	 14.42344428670212}}
           zoom= {13}
         onLoad={handleLoad}
         onDragEnd={handleCenter}
 
-        onUnmount={onUnmount}
       >
         {/* Wolf 1 marker and popup */}
           <Marker
-           position={{ lat: 50.09731092200874,  lng: 	14.42326788471357 }}
+           position={{     lat: 50.0970735409358,
+            lng: 	 14.42344428670212
+          }}
            onClick={() => {
             setSelectedCenter(center);
          }
@@ -115,7 +113,7 @@ function MapView() {
 
         {/* Wolf 2 marker and popup */}
 
-          <Marker position={ { lat: 50.079845162600705,  lng: 	14.422466655877205 }}
+          <Marker position={ { lat:50.07963516948142,   lng: 	14.422411559068218}}
            onClick={() => {
             setwolf2(center);
          }}>
@@ -126,7 +124,7 @@ function MapView() {
            onCloseClick={() => {
             setwolf2(null);
          }}
-           position={ { lat: 50.079845162600705,  lng: 	14.422466655877205 }}
+           position={ {lat:50.07963516948142,   lng: 	14.422411559068218}}
            >
           <div className="importedpanel">
             <Wolf2/>
@@ -135,7 +133,9 @@ function MapView() {
         )}
            {/* Wolf 3 marker and popup */}
 
-           <Marker position={ { lat: 50.08017624647881,  lng: 	14.421947954027132}}
+           <Marker position={ {     lat: 50.07994163214149,  lng:  14.422198819621565
+
+}}
            onClick={() => {
             setwolf3(center);
          }}>
@@ -146,7 +146,9 @@ function MapView() {
            onCloseClick={() => {
             setwolf3(null);
          }}
-           position={ { lat: 50.08017624647881,  lng: 	14.421947954027132 }}
+           position={ {     lat: 50.07994163214149,  lng:  14.422198819621565
+
+           }}
            >
           <div className="importedpanel">
             <Wolf3/>
@@ -156,7 +158,8 @@ function MapView() {
 
                    {/* Wolf 4 marker and popup */}
 
-                   <Marker position={{ lat: 50.08907938126997,   lng: 	14.429230650070062}}
+                   <Marker position={{     lat: 50.08838681986969,   lng: 14.4287643540203
+}}
            onClick={() => {
             setwolf4(center);
          }}>
@@ -167,7 +170,8 @@ function MapView() {
            onCloseClick={() => {
             setwolf4(null);
          }}
-           position={ { lat: 50.08907938126997,   lng: 	14.429230650070062}}
+           position={ {     lat: 50.08838681986969,   lng: 14.4287643540203
+           }}
            >
           <div className="importedpanel">
             <Wolf4/>
@@ -256,7 +260,7 @@ function MapView() {
         )}
                            {/* Wolf 9 marker and popup */}
 
-                           <Marker position={  { lat: 50.10842673704248,     lng: 14.472610598206776}}
+                           <Marker position={  { lat: 50.10542604617882,   lng: 14.472954291237905}}
            onClick={() => {
             setwolf9(center);
          }}>
@@ -267,7 +271,7 @@ function MapView() {
            onCloseClick={() => {
             setwolf9(null);
          }}
-           position={ { lat: 50.10842673704248,     lng: 14.472610598206776}}
+           position={ { lat: 50.10542604617882,   lng: 14.472954291237905}}
            >
           <div className="importedpanel">
             <Wolf9/>
@@ -276,7 +280,8 @@ function MapView() {
         )}
                            {/* Wolf 10 marker and popup */}
 
-                           <Marker position={{ lat: 50.10432173527279,      lng: 	14.390947198206655}}
+                           <Marker position={{    lat: 50.10366602403943,   lng: 14.390367862718017
+          }}
            onClick={() => {
             setwolf10(center);
          }}>
@@ -287,7 +292,8 @@ function MapView() {
            onCloseClick={() => {
             setwolf10(null);
          }}
-           position={ { lat: 50.10432173527279,      lng: 	14.390947198206655}}
+           position={ {     lat: 50.10366602403943,   lng: 14.390367862718017
+           }}
            >
           <div className="importedpanel">
             <Wolf10/>
@@ -296,7 +302,7 @@ function MapView() {
         )}
                            {/* Wolf 11 marker and popup */}
 
-                           <Marker position={ { lat: 50.07997683989879,       lng: 	14.422042869370111}}
+                           <Marker position={ {lat: 50.0800218898805,        lng: 	14.42218269830287}}
            onClick={() => {
             setwolf11(center);
          }}>
@@ -307,7 +313,7 @@ function MapView() {
            onCloseClick={() => {
             setwolf11(null);
          }}
-           position={ { lat: 50.07997683989879,       lng: 	14.422042869370111}}
+           position={ { lat: 50.0800218898805,        lng: 	14.42218269830287}}
            >
           <div className="importedpanel">
             <Wolf11/>
@@ -316,7 +322,7 @@ function MapView() {
         )}
                            {/* Wolf 12 marker and popup */}
 
-                   <Marker position={  { lat: 50.08341909503754,      lng: 	14.418190084998185}}
+                   <Marker  position={{ lat: 50.083320188218316,     lng: 		14.417951201134887}}
            onClick={() => {
             setwolf12(center);
          }}>
@@ -327,8 +333,8 @@ function MapView() {
            onCloseClick={() => {
             setwolf12(null);
          }}
-           position={ { lat: 50.08341909503754,      lng: 	14.418190084998185}}
-           >
+         position={{ lat: 50.083320188218316,     lng: 		14.417951201134887}}
+                    >
           <div className="importedpanel">
             <Wolf12/>
             </div>

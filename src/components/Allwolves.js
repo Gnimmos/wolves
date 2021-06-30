@@ -17,14 +17,30 @@ import wolve11 from '../wolves/wolf11.png';
 import wolve12 from '../wolves/wolf12.png';
 import { Link } from 'react-router-dom';
 
+import leftarrow from '../left-arrow.png'
 
 
 
 class Allwolves extends React.Component {
+  constructor(props) {
+    super(props);
+    this.goBack = this.goBack.bind(this); // i think you are missing this
+    
+}
+goBack(){
+  this.props.history.goBack();
+
+}
+
     render() {
       return (
-          <div style={{height:"100%"}}>
+          <div style={{height:"100%", paddingTop:"3%"}}>
+
               <Container>
+              <button className="backbutton"onClick={this.goBack}><img height="25px"src={leftarrow} alt="back"></img></button>
+            <br/>
+            <br/>
+
                 <Row  lg={4}>
                 <Col lg={3} >
                 <Link href="blank" className = "wolvethumb" to="/wolf1"><img className = "wolvethumb1" src={wolve1}alt ="wolf 1"></img></Link>

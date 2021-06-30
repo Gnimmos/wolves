@@ -15,7 +15,7 @@ function MapView() {
     googleMapsApiKey: "AIzaSyCPvonqANcEExEJ9Kt3FuRPGePPZb1JqBo"
   })
   const [position, setPosition] = useState({
-    lat: 50.08017624647881,  lng: 	14.421947954027132
+    lat: 50.07994163214149,  lng:  14.422198819621565
 });
 const [map, setMap] = React.useState(null)
 
@@ -37,7 +37,9 @@ const onUnmount = React.useCallback(function callback(map) {
     <GoogleMap
       mapContainerStyle={containerStyle}
       center={position}
-        initialCenter = {{ lat: 50.08017624647881,  lng: 	14.421947954027132}}
+        initialCenter = {{      lat: 50.07994163214149,  lng:  14.422198819621565
+
+        }}
         zoom= {12}
       onLoad={handleLoad}
       onDragEnd={handleCenter}
@@ -45,7 +47,9 @@ const onUnmount = React.useCallback(function callback(map) {
       onUnmount={onUnmount}
     >
  <Marker
-           position={{ lat: 50.08017624647881,  lng: 	14.421947954027132 }}></Marker>
+           position={{     lat: 50.07994163214149,  lng:  14.422198819621565
+
+           }}></Marker>
 <></>
       </GoogleMap>
   ) : <></>

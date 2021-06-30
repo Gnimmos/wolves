@@ -1,8 +1,8 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Row, Col } from 'react-bootstrap';
+import {  Row, Col } from 'react-bootstrap';
 import logo1 from './noun_Prague.829619a1.png'
-import { withTranslation, Trans } from "react-i18next";
+import { withTranslation } from "react-i18next";
 import { Translation } from 'react-i18next';
 import './Menubar.css'
 
@@ -27,7 +27,7 @@ class Menubar extends React.Component{
     loadaudio(){
 
       var aud = globalVal.value;
-      if(!aud=='en'){
+      if(!aud==='en'){
         this.setState({
           lang: false 
            
@@ -47,7 +47,7 @@ class Menubar extends React.Component{
   
     render(){
 
-      const { t, i18n } = this.props;
+      const { i18n } = this.props;
 
       const changeLanguage = lng => {
         i18n.changeLanguage(lng);
