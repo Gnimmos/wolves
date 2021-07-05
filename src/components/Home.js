@@ -9,7 +9,7 @@ import logo2 from '../hrlogo.png'
 import SlidingPane from "react-sliding-pane";
 import "react-sliding-pane/dist/react-sliding-pane.css";
 import { Link } from 'react-router-dom';
-import logo3 from '../wolves_pics/Fotograf_logo-02.svg'
+import logo3 from '../wolves_pics/Fotograf_logo-02.png'
 
 import { Translation } from 'react-i18next';
 
@@ -77,12 +77,12 @@ class Home extends React.Component {
                                     }
                                 </Translation>
 </Col>
-<Col lg={4}>
+<Col xs={4}>
 <a  className = " hyper" href="https://iksz.fsv.cuni.cz"  target="blank">
 <img className="footer-logo" style={{picturecolor:"black"}} src={logo2} alt="Logo" color="white" />
 </a>
 </Col>
-<Col lg={4}>
+<Col xs={4}>
 <a  className = "hyper1" href="https://fotografestival.cz"  target="blank">
 <img className="logo3" style={{picturecolor:"black"}} src={logo3} alt="Logo" color="white" />
 </a>
@@ -135,17 +135,38 @@ class Home extends React.Component {
                                     t =>  <text>{t("about1")}</text>
                                     }
                                 </Translation>  
-         <em>          <Translation>
+                                    <em>
+        
+        <Translation>
                                 {
-                                    t =>  <text>{t("wolftalks")}</text>
+                                    t =>  <text>{t("wolftalksaltcz")}</text>
                                     }
-                                </Translation>  </em>    
+                                </Translation>  
+
+                                </em>
                                  <Translation>
                                 {
                                     t =>  <text>{t("about11")}</text>
                                     }
-                                </Translation> <br/>
+                                </Translation>                                    
+                                <em>
+        
+                             <Translation>
+                                {
+                                    t =>  <text>{t("wolftalksnocz")}</text>
+                                    }
+                                </Translation>  
+
+                                </em>  
+        <Translation>
+                                {
+                                    t =>  <text>{t("about12")}</text>
+                                    }
+                                </Translation>  
+                                <br/>
+
         <br/>
+
         <Translation>
                                 {
                                     t =>  <text>{t("about2")}</text>
@@ -190,6 +211,20 @@ class Home extends React.Component {
                                     t =>  <text>{t("about43")}</text>
                                     }
                                 </Translation> 
+                                <em>
+                                <Translation>
+                                {
+                                    t =>  <text>{t("wolftalksnoeng")}</text>
+                                    }
+                                </Translation> 
+                                 </em> 
+                                 <Translation>
+                                {
+                                    t =>  <text>{t("about44")}</text>
+                                    }
+                                </Translation> 
+<br/>
+<br/>
 <br/>
 <br/>
 <em>         

@@ -83,7 +83,7 @@ class Wolf6 extends React.Component {
         };
         return (
             <div className="wolvesdiv">   
-                                <Row >
+                                <Row className= "wolfrow">
 
                                 <Col lg={5} className=" colin ">
                                 <div style={{width:"300px"}}>

@@ -50,6 +50,7 @@
     right:0; 
     background-color: transparent;
     height: 10%;
+    padding-left: 5%;
 
  
   }
@@ -91,6 +92,8 @@
   }
   .backbutton{
     background-color: transparent;
+    position: absolute;
+
     border: none;
     size:2rem;
     left:2%;
@@ -101,11 +104,11 @@
     margin: 2%;
     }
  .hyper{
-   margin-left: 15%;
+   margin-left: 10%;
    margin-top: 7%
  }
  .hyper1{
-  margin-left: 37%;
+  margin-left: 40%;
   margin-top: 10%;
 }
   .title{
@@ -114,7 +117,7 @@
   .footer-logo{
     color: black;
     background-color: transparent;
-    margin-left: 13% !important;
+    margin-left: 20% !important;
     margin-top: 5%;
   }
   p{
@@ -129,6 +132,8 @@
       } 
       .footerText{
       height: 20%;
+      padding-left: 0%;
+
     }
     .middle{
       height: 60%;
@@ -163,6 +168,8 @@
     } 
     .footerText{
     height: 10%;
+    padding-left: 0%;
+
   }
   .middle{
     height: 60%;
@@ -199,6 +206,8 @@
   } 
   .footerText{
   height: 10%;
+  padding-left: 0%;
+
 }
 .middle{
   height: 60%;
@@ -233,6 +242,8 @@
       } 
       .footerText{
         height: 20%;
+        padding-left: 0%;
+
       }
       .middle{
         height: 60%;
@@ -262,7 +273,9 @@
         font-size: 1rem;
       } 
       .footerText{
-        height: 35%;
+        height: 25%;
+        padding-left: 0%;
+
       }
       .middle{
         height: 80%;
@@ -276,13 +289,13 @@
         margin-top: 0%;
       }
       .hyper1{
-        margin-left: 2%;
+        margin-left: 60%;
         margin-top: 0%;
 
       }
       .logo3{
         width: 100px;
-        height: 100px;
+        height: 60px;
       }
       .text{
         margin-left: -1%;
@@ -292,7 +305,7 @@
 
       .footer-logo{
         size:70px;
-      }
+            }
       .buttoms{
         size:3rem;
       }
@@ -323,6 +336,13 @@
       .totheright{
         margin-left: 0%;
       }
+      .footer-logo {
+        color: black;
+        background-color: transparent;
+        margin-left: 13% !important;
+        margin-top: 9%;
+    }
+
       
 
     }

@@ -11,6 +11,9 @@
     color: #000;
 
 }
+.wolfrow{
+    margin-top: 5%;
+}
 .langu{
         text-align: center;
         position: relative;
@@ -68,5 +71,8 @@
     .diffwolf{
         width: 200px;
         height: 100px;
+    }
+    .wolfrow{
+        margin-top: 12%;
     }
 }

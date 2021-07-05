@@ -25,7 +25,6 @@ class Allwolves extends React.Component {
   constructor(props) {
     super(props);
     this.goBack = this.goBack.bind(this); // i think you are missing this
-    
 }
 goBack(){
   this.props.history.goBack();
@@ -41,7 +40,7 @@ goBack(){
             <br/>
             <br/>
 
-                <Row  lg={4}>
+            <Row className= "wolfrow" lg={4}>
                 <Col lg={3} >
                 <Link href="blank" className = "wolvethumb" to="/wolf1"><img className = "wolvethumb1" src={wolve1}alt ="wolf 1"></img></Link>
                 <br/>
