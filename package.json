@@ -1,11 +1,10 @@
 {
   "name": "wolves",
-  "homepage": "http://wolvestalk.commedia.wiki/",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@react-google-maps/api": "^2.2.0",
-    "@somarmeteorologia/react-leaflet-markers": "^1.0.2",
     "@testing-library/jest-dom": "^5.11.5",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -25,16 +24,12 @@
     "react-google-invisible-recaptcha": "^0.2.11",
     "react-i18next": "^11.8.10",
     "react-leaflet": "^2.8.0",
-    "react-leaflet-enhanced-marker": "^1.0.12",
-    "react-leaflet-markercluster": "^3.0.0-rc1",
-    "react-leaflet-universal": "^2.2.1",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.3",
-    "react-sliding-pane": "^6.1.2",
-    "react-sound": "^1.2.0",
+    "react-sliding-pane": "^7.0.0",
     "underscore": "^1.13.1",
-    "update": "^0.7.4"
+    "update": "^0.4.2"
   },
   "scripts": {
     "start": "react-scripts start && npm run build && npm run start-server",
@@ -73,6 +68,9 @@
     ]
   },
   "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "babel-loader": "^8.1.0",
     "bootstrap": "^4.0.0-beta",
     "ftp-deploy": "^2.4.1",
     "jquery": "^3.5.1",

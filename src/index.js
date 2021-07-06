@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css'
 import Home from './components/Home';
-import { BrowserRouter, Route, Switch, useRouteMatch } from "react-router-dom";
+import { BrowserRouter, Route, Switch, HashRouter } from "react-router-dom";
 
 import wolf1withback from'./components/wolf1withback.js';
 import wolf2withback from'./components/wolf2withback.js';
@@ -39,24 +39,23 @@ class App extends React.Component {
   render() {
 
     return (
-      <BrowserRouter>
 
       <Switch>
       <Route path="/" component={Home} exact />
-      <Route path="/Allwolves" component={Allwolves} exact />
+      <Route path="/Allwolves" component={Allwolves}  />
 
-      <Route path="/wolf1" component={wolf1withback} exact />
-      <Route path="/wolf2" component={wolf2withback} exact />
-      <Route path="/wolf3" component={wolf3withback} exact />
-      <Route path="/wolf4" component={wolf4withback} exact />
-      <Route path="/wolf5" component={wolf5withback} exact />
-      <Route path="/wolf6" component={wolf6withback} exact />
-      <Route path="/wolf7" component={wolf7withback} exact />
-      <Route path="/wolf8" component={wolf8withback} exact />
-      <Route path="/wolf9" component={wolf9withback} exact />
-      <Route path="/wolf10" component={wolf10withback} exact />
-      <Route path="/wolf11" component={wolf11withback} exact />
-      <Route path="/wolf12" component={wolf12withback} exact />
+      <Route path="/wolf1" component={wolf1withback}  />
+      <Route path="/wolf2" component={wolf2withback}  />
+      <Route path="/wolf3" component={wolf3withback}  />
+      <Route path="/wolf4" component={wolf4withback}  />
+      <Route path="/wolf5" component={wolf5withback}  />
+      <Route path="/wolf6" component={wolf6withback}  />
+      <Route path="/wolf7" component={wolf7withback}  />
+      <Route path="/wolf8" component={wolf8withback}  />
+      <Route path="/wolf9" component={wolf9withback}  />
+      <Route path="/wolf10" component={wolf10withback}  />
+      <Route path="/wolf11" component={wolf11withback}  />
+      <Route path="/wolf12" component={wolf12withback}  />
 
       <Route path="/locwolf1" component={wolf1loc} />
       <Route path="/locwolf2" component={wolf2loc} />
@@ -71,9 +70,7 @@ class App extends React.Component {
       <Route path="/locwolf11" component={wolf111oc} />
       <Route path="/locwolf11" c1omponent={wolf12loc} />
 
-
       </Switch>
-      </BrowserRouter>
     );
   }
 }
@@ -82,11 +79,11 @@ export default App;
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter >
       <I18nextProvider i18n={i18n}>
         <App />
       </I18nextProvider>,
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
